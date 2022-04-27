@@ -1,0 +1,27 @@
+.product_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+.product_l {
+    padding: 10px;
+    display: flex;
+    margin: 0px auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+ 
+.product_list img {
+    width: 300px;
+}
+.product_desc {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.button_container {
+    display: flex;
+}
