@@ -1,26 +1,42 @@
-  <nav class="navbar navbar-expand-lg navbar-light bg-white main__nav">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngpix.com%2Fwp-content%2Fuploads%2F2016%2F07%2FPNGPIX-COM-Whole-Foods-Market-Logo-PNG-Transparent.png&f=1&nofb=1" alt="logo" style="width: 100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                     <a href="/" class="nav-link active" aria-current="page" href="#">Почетна</a>
-                </li>
-                <li class="nav-item">
-                     <a href="{{route('menu')}}" class="nav-link active" aria-current="page" href="#"> Мени</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Наши Вредности</a>
-                </li>
-   
-            </ul>
  
-            </div>
+    <header>
+        <!--? Header Start -->
+        <div class="header-area header-transparent">
+                <div class="main-header  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-1">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10">
+                                <div class="menu-main d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu f-right d-none d-lg-block">
+                                        <nav> 
+                                            <ul id="navigation">
+                                                <li><a href="/">Почетна</a></li>
+                                                <li><a href="{{ route('about') }}">За Нас</a></li>
+                                                <li><a href="{{ route('menu') }}">Мени</a></li>
+                                                <li><a href="{{ route('delivery') }}">Достава</a></li>
+                                                <li><a href="{{ route('contact') }}">Контакт</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="header-right-btn f-right d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="border-btn header-btn">Нарачај Сега</a>
+                                    </div>
+                                </div>
+                            </div>   
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-    </nav>
+        <!-- Header End -->
+    </header>

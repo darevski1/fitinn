@@ -19,12 +19,17 @@ Route::get('/', function () {
 });
 
 Auth::routes();
- 
+// Routes for admin panel
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::resource('/category', 'CategoryController');
 Route::resource('/products', 'ProductCOntroller');
+// ./Routes for admin panel
 
 // Public Pages
 Route::get("/menu", "PublicController@menu")->name('menu');
 Route::get("/menu", "PublicController@getCategory")->name('menu');
 Route::get("/items/{id}", "PublicController@getByid")->name('items/');
+Route::get("/about", "PublicController@about")->name('about');
+Route::get("/delivery", "PublicController@delivery")->name('delivery');
+Route::get("/contact", "PublicController@contact")->name('contact');
+Route::get("/", "PublicController@index");
